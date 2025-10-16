@@ -1,16 +1,19 @@
-#### Submitted
+### Co-Teleological Interaction with AI Agents
+An interaction paradigm that emphasizes dynamic collaboration between people and generative AI: through **multi-branch dialogues and reflective iteration** to clarify and refine goals, supporting divergent–convergent creative exploration. Prototype built with GPT-4 and DALL·E show promise in stimulating ideation and multi-perspective dialogue.
 
-- <strong>S. Li</strong>, X. Yang*, A. Cao*, K. Fan, Y. Liu, C. Wang, and Q. Niu. LaNCoR: Label Noise-Contrastive Robust Learning for Seismic Signal Processing with Application to Microseismic Arrival Time Picking. <strong>Rej :)</strong> [[Code]](https://github.com/senli1073/LaNCor)
+![Prototype UI preview](static/assets/img/Flow_Figure-3.webp) ![Interaction flow diagram](static/assets/img/screenshot2.webp)
 
-#### Published
+**More information**: [Prototype Code/Overview](https://github.com/LordBounty/Co-teleological-Space) · [Paper Link(reviewing)]() 
 
-- X. Yang, <strong>S. Li</strong>, A. Cao*, C. Wang*, Y. Liu, X. Bai, and Q. Niu (2024). Deep Transfer Learning for P-wave Arrival Identification and Automatic Seismic Source Location in Underground Mines. <strong>International Journal of Rock Mechanics and Mining Sciences</strong>. [[Paper]](https://doi.org/10.1016/j.ijrmms.2024.105888)
+---
 
-- <strong>S. Li</strong>, X. Yang*, A. Cao*, C. Wang, Y. Liu, Y. Liu, and Q. Niu (2024). SeisT: A Foundational Deep-Learning Model for Earthquake Monitoring Tasks. <strong>IEEE Transactions on Geoscience and Remote Sensing</strong>. [[Paper]](https://doi.org/10.1109/TGRS.2024.3371503) [[Code]](https://github.com/senli1073/SeisT)
+### Unity Window Capture for 3D/MR
+A Unity-based tool that captures desktop windows and **projects them onto 3D surfaces**, with basic editing and window management—exploring spatial layout and interaction for mixed-reality workflows. I led core interaction implementation and performance optimization, and coordinated project management and communication; the prototype received positive internal research feedback.
 
-- A. Cao, X. Yang, C. Wang*, <strong>S. Li</strong>, Y. Liu, L. Dou, and Q. Niu (2023). High-Precision Phase Picking and Automatic Source Locating Method for Seismicity in Mines Based on Deep Transfer Learning. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2023.0095)
+![Window projected onto a 3D object](static/assets/img/unity-1.png) ![Editing and management UI](static/assets/img/unity-2.png)
 
-- A. Cao, Y. Liu, X. Yang*, <strong>S. Li</strong>, C. Wang, X. Bai, and Y. Liu (2022). Physical Index and Data Fusion-Driven Method for Coal Burst Prediction in Time Sequence. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2022.0680)
+**More information**: [Project/Overview](https://github.com/LordBounty/UnityWindowCapture?tab=readme-ov-file)  ·  [Demo video](https://github.com/WearableComputerLab/UnityWindowManagement/issues/1)
 
-- X. Yang, X. Yu, C. Zhang, <strong>S. Li</strong>, and Q. Niu (2021). MineGPS: Battery-Free Localization Base Station for Coal Mine Environment. <strong>IEEE Communications Letters</strong>. [[Paper]](https://doi.org/10.1109/LCOMM.2021.3081593)
+
+
 

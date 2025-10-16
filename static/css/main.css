@@ -109,4 +109,95 @@ section .main-body{
     }
 }
 
+/* 并排，按比例缩放（不裁剪） */
+#publications .main-body p > img,
+#projects .main-body p > img {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 8px);
+  height: auto;                 /* 关键：不固定高度，按比例缩放 */
+  margin: 0 8px 12px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  cursor: zoom-in;              /* 提示可点击放大 */
+}
+#publications .main-body p > img:last-child,
+#projects .main-body p > img:last-child { margin-right: 0; }
 
+@media (max-width: 640px) {
+  #publications .main-body p > img,
+  #projects .main-body p > img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+}
+
+/* Lightbox 遮罩与关闭按钮 */
+#img-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.6);
+  opacity: 0; pointer-events: none;
+  transition: opacity .2s ease;
+  z-index: 9998;
+}
+body.lightbox-open #img-backdrop {
+  opacity: 1; pointer-events: auto;
+}
+body.lightbox-open { overflow: hidden; }
+
+/* 放大状态的图片 */
+img.zoomed {
+  position: fixed !important;
+  top: 50% !important; left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: auto !important; height: auto !important;
+  max-width: 90vw !important; max-height: 90vh !important;
+  z-index: 9999 !important;
+  box-shadow: 0 12px 40px rgba(0,0,0,.5) !important;
+  border-radius: 12px !important;
+  cursor: zoom-out !important;
+}
+
+/* 右上角关闭按钮（X） */
+#img-close {
+  position: fixed; top: 16px; right: 16px;
+  width: 36px; height: 36px;
+  display: none; align-items: center; justify-content: center;
+  background: rgba(0,0,0,.6); color: #fff;
+  border: 0; border-radius: 50%; z-index: 10000;
+  font-size: 20px; line-height: 1;
+  cursor: pointer;
+}
+#img-close:hover { background: rgba(0,0,0,.75); }
+#img-close:focus { outline: 2px solid #fff; outline-offset: 2px; }
+body.lightbox-open #img-close { display: flex; }
+
+/* Projects/Publications：两图并排 + 等高缩略图（不裁剪） */
+#publications .main-body p > img,
+#projects .main-body p > img {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 8px);
+  height: 220px;          /* 等高：可改 180~260 之间看视觉 */
+  object-fit: contain;     /* 按比例缩放，不裁剪 */
+  margin: 0 8px 12px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  cursor: zoom-in;
+}
+#publications .main-body p > img:last-child,
+#projects .main-body p > img:last-child { margin-right: 0; }
+
+/* 移动端单列，自适应高度 */
+@media (max-width: 640px) {
+  #publications .main-body p > img,
+  #projects .main-body p > img {
+    width: 100%;
+    height: auto;          /* 竖排时恢复自然高度 */
+    object-fit: contain;
+    margin-right: 0;
+  }
+}
+
+/* 放大层仍用你现有的 .zoomed 规则（不受上面影响） */
