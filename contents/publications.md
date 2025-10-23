@@ -10,7 +10,7 @@ An interaction paradigm that emphasizes dynamic collaboration between people and
 ### Unity Window Capture for 3D/MR
 A Unity-based tool that captures desktop windows and **projects them onto 3D surfaces**, with basic editing and window management—exploring spatial layout and interaction for mixed-reality workflows. I led core interaction implementation and performance optimization, and coordinated project management and communication; the prototype received positive internal research feedback.
 
-![Window projected onto a 3D object](static/assets/img/unity-1.png) ![Editing and management UI](static/assets/img/unity-2.png)
+![Window projected onto a 3D object](static/assets/img/unity-1.webp) ![Editing and management UI](static/assets/img/unity-2.webp)
 
 **More information**: [Project/Overview](https://github.com/LordBounty/UnityWindowCapture?tab=readme-ov-file)  ·  [Demo video](https://github.com/WearableComputerLab/UnityWindowManagement/issues/1)
 
